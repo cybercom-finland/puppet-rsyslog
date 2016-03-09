@@ -46,6 +46,7 @@ class rsyslog::params {
       $rsyslog_d              = '/etc/rsyslog.d/'
       $rsyslog_conf           = '/etc/rsyslog.conf'
       $rsyslog_default        = '/etc/default/rsyslog'
+      $rsyslog_conf_file      = 'rsyslog.conf'
       $default_config_file    = 'rsyslog_default'
       $log_group              = 'adm'
       $log_style              = 'debian'
@@ -73,6 +74,7 @@ class rsyslog::params {
         $pgsql_package_name     = 'rsyslog-pgsql'
         $gnutls_package_name    = 'rsyslog-gnutls'
         $relp_package_name      = false
+        $rsyslog_conf_file      = 'rsyslog.conf'
         $default_config_file    = 'rsyslog_default'
         $modules                = [
           '$ModLoad imuxsock # provides support for local system logging',
@@ -87,6 +89,7 @@ class rsyslog::params {
         $pgsql_package_name     = 'rsyslog-pgsql'
         $gnutls_package_name    = 'rsyslog-gnutls'
         $relp_package_name      = false
+        $rsyslog_conf_file      = 'rsyslog.conf'
         $default_config_file    = 'rsyslog_default'
         $modules                = [
           '$ModLoad imuxsock # provides support for local system logging',
@@ -101,6 +104,7 @@ class rsyslog::params {
         $pgsql_package_name     = 'rsyslog-pgsql'
         $gnutls_package_name    = 'rsyslog-gnutls'
         $relp_package_name      = 'rsyslog-relp'
+        $rsyslog_conf_file      = 'rsyslog.conf'
         $default_config_file    = 'rsyslog_default'
         $modules                = [
           '$ModLoad imuxsock # provides support for local system logging',
@@ -115,6 +119,7 @@ class rsyslog::params {
         $pgsql_package_name     = 'rsyslog-pgsql'
         $gnutls_package_name    = 'rsyslog-gnutls'
         $relp_package_name      = 'rsyslog-relp'
+        $rsyslog_conf_file      = 'rsyslog.conf'
         $default_config_file    = 'rsyslog_default_rhel7'
         $modules                = [
           '$ModLoad imuxsock # provides support for local system logging',
@@ -129,6 +134,7 @@ class rsyslog::params {
         $pgsql_package_name     = 'rsyslog5-pgsql'
         $gnutls_package_name    = 'rsyslog5-gnutls'
         $relp_package_name      = 'librelp'
+        $rsyslog_conf_file      = 'rsyslog.conf'
         $default_config_file    = 'rsyslog_default'
         $modules                = [
           '$ModLoad imuxsock # provides support for local system logging',
@@ -167,6 +173,7 @@ class rsyslog::params {
       $rsyslog_d              = '/etc/rsyslog.d/'
       $rsyslog_conf           = '/etc/rsyslog.conf'
       $rsyslog_default        = '/etc/sysconfig/syslog'
+      $rsyslog_conf_file      = 'rsyslog.conf'
       $default_config_file    = 'rsyslog_default_suse'
       $run_user               = 'root'
       $run_group              = 'root'
@@ -197,6 +204,7 @@ class rsyslog::params {
       $rsyslog_d              = '/etc/syslog.d/'
       $rsyslog_conf           = '/etc/syslog.conf'
       $rsyslog_default        = '/etc/defaults/syslogd'
+      $rsyslog_conf_file      = 'rsyslog.conf'
       $default_config_file    = 'rsyslog_default'
       $run_user               = 'root'
       $run_group              = 'wheel'
@@ -232,6 +240,7 @@ class rsyslog::params {
           $rsyslog_d              = '/etc/rsyslog.d/'
           $rsyslog_conf           = '/etc/rsyslog.conf'
           $rsyslog_default        = '/etc/conf.d/rsyslog'
+          $rsyslog_conf_file      = 'rsyslog.conf'
           $default_config_file    = 'rsyslog_default_gentoo'
           $run_user               = 'root'
           $run_group              = 'root'

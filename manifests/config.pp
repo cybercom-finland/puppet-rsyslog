@@ -25,7 +25,7 @@ class rsyslog::config {
     ensure  => file,
     owner   => 'root',
     group   => $rsyslog::run_group,
-    content => template("${module_name}/rsyslog.conf.erb"),
+    content => template("${module_name}/${rsyslog::rsyslog_conf_file}.erb"),
     require => Class['rsyslog::install'],
     notify  => Class['rsyslog::service'],
   }

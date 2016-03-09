@@ -1,0 +1,5 @@
+# file is managed by puppet
+
+# Include all config files in <%= scope.lookupvar('rsyslog::rsyslog_d') %>
+#
+$IncludeConfig <%= scope.lookupvar('rsyslog::rsyslog_d') -%>*.conf
